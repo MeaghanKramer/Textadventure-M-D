@@ -1,16 +1,19 @@
 import time
+
+
 def again():
   print("Je hebt verloren")
   c = input("Wil je nog een keer spelen (typ ja of nee) ")
-  if c == "Ja" or c == "ja":
+  if c == "Ja" or c == "ja" or c == "JA":
     spel()
   else:
-    exit() 
+    print("GAME OVER")
+    exit()
 
 kamers = {
   "padkeuze": {
-    "title": "padkeuze",
-    "beschrijving": "Je staat in de modder, met een grote heuvel voor je en een enorme schaduw hangt over je heen. Je denkt al jaren aan die ene legende die je toen hoorde van je opa. Eindelijk heb je je ouders kunnen overtuigen om je op reis te laten gaan en je gaat op zoek naar de schat waar je opa je zoveel verhalen over had verteld. De schat ligt op de berg. Je staat hier voor je eerste kruising, welk pad zal je kiezen?",
+    "title": "Begin van je reis",
+    "beschrijving": "Je staat in de modder, met een grote heuvel voor je en een enorme schaduw hangt over je heen. Je denkt al jaren aan die ene legende die je toen hoorde van je opa. Eindelijk heb je je ouders kunnen overtuigen om je op reis te laten gaan en je gaat op zoek naar de schat waar je opa je zoveel verhalen over had verteld. De schat ligt op de berg. Je staat hier voor je eerste kruising, welk pad zal je kiezen?. Oosten naar kort en onveilig",
 
     "options": ["modder" , "padkeuze"]
     },
@@ -22,13 +25,16 @@ kamers = {
 } 
 
 def Soortenkamers(kamer):
-  huidigekammer = kamers[kamer] 
-  title = huidigekammer["title"]
-  beschrijving = huidigekammer["beschrijving"]
+  huidigekamer = kamers[kamer] 
+
+  title = huidigekamer["title"]
+  beschrijving = huidigekamer["beschrijving"]
+  options = huidigekamer["options"]
+
   print (f"Je bent nu in de {title}.")
   print(beschrijving)
   print("Welke pad kies je nu: ")
-  print(" , ".join(kamers.keys()))
+  print(" , ".join(options))
 
   VolgendeKamer = input()
   Soortenkamers(VolgendeKamer)   
@@ -49,8 +55,10 @@ def spel():
   b = input("Heb je het begrepen? Typ ja of nee  ")
   if b == "nee" or b == "Nee":
     again()
-  if b == "Ja" or b == "ja": 
+  if b == "Ja" or b == "ja" or b == "JA": 
    Soortenkamers("padkeuze")
+  if b == "q" or b == "Q":
+    again()
 
 spel()
   
