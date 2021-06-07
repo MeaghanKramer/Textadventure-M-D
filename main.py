@@ -111,16 +111,32 @@ def Soortenkamers(kamer):
   print("Waarvoor kies je: ")
   print(" , ".join(options))
 
- 
-  VolgendeKamer = input()
-  Soortenkamers(VolgendeKamer)   
-  if VolgendeKamer == "q" or VolgendeKamer == "Q":
-    Verlorenagain
+    
   
-  if VolgendeKamer in huidigekamer["options"]:
-    print("s")
-  else:
-    print("j")
+  Volgende = input()
+  if Volgende == "q" or Volgende == "Q":
+    Verlorenagain()
+  elif not Volgende in options:    
+    print("Je hebt het verkeerde ingetypt")
+    print("kies nogmaals uit deze keuzes")
+    print(" , ".join(options))
+    Volgende = input()
+    if not Volgende in options:    
+      print("Je hebt het verkeerde ingetypt")
+      print("kies nogmaals uit deze keuzes")
+      print(" , ".join(options))
+      Volgende = input()
+      if not Volgende in options:  
+        print("Je hebt het verkeerde ingetypt")
+        print("kies nogmaals uit deze keuzes")
+        print(" , ".join(options))
+        Volgende = input()
+      if not Volgende in options:
+        print("je hebt meerdere malen het verkeerde ingetypt. Het spel houdt nu echt op")
+        Verlorenagain()
+    
+  elif Volgende in options:
+    Soortenkamers(Volgende)   
 
 
   
