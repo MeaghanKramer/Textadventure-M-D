@@ -63,6 +63,28 @@ kamers = {
     "lost": "no",
     "win": "no",
     },
+  "nee": {
+    "title": "de hamer niet op te pakken",
+    "beschrijving": "je bent net de pijn uit je voet kwijt als je ineens een raar figuur in de verte ziet staan, het lijkt op een bosbewoner! Hij komt op je af met een aardig snel tempo, oh nee wat nu?!!. Je kan de bosbewoner uitschelden, begroeten, of negeren",
+    "options": ["begroeten", "negeren", "uitschelden"],
+    "lost": "no",
+    "win": "no",
+    },
+  "begroeten": {
+    "title": "om rustig te blijven en het wezen te begroeten",
+    "beschrijving": "je besluit toch maar even de kaart van je opa te bekijken, je bent al over de helft van de route naar de schat! Je ziet ineens de bloedvlekken op de kaart die je eerder nog niet zijn ogevallen, je hoort gegrom boven je en kijkte omhoog, het is een woeste Dodo! Maar die waren toch uitgestorven, hier niet! Wat doe je? dood maken of rustig blijven",
+    "options": ["dood maken", "rustig blijven"],
+    "lost": "no",
+    "win": "no"
+    }
+  
+
+    
+
+  
+
+
+  
 } 
 
 
@@ -95,6 +117,12 @@ def Soortenkamers(kamer):
   if VolgendeKamer == "q" or VolgendeKamer == "Q":
     Verlorenagain
   
+  if VolgendeKamer in huidigekamer["options"]:
+    print("s")
+  else:
+    print("j")
+
+
   
 def spel():
   a = input("Wat is je naam? ")
