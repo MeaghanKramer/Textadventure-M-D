@@ -1,6 +1,8 @@
 import os
 from kamer import kamers
 
+inventory = []
+
 def Verlorenagain():
   print("Je hebt verloren")
   c = input("Wil je nog een keer spelen (typ ja of nee) ")
@@ -24,6 +26,7 @@ def Soortenkamers(kamer):
   titel = huidigekamer["title"]
   beschrijving = huidigekamer["beschrijving"]
   options = huidigekamer["options"]
+  items = huidigekamer["items"]
   verliezen = huidigekamer["lost"]
   winnen = huidigekamer["win"]
   
@@ -44,24 +47,36 @@ def Soortenkamers(kamer):
   print('-' * 80)
   
   Volgende = input()
-  if Volgende == "q" or Volgende == "Q":
+  if Volgende.lower() == "q":
     Verlorenagain()
+  # elif Volgende.lower() == 'g':
+    #if kamers[kamer]['items'] == '':
+     # print('Hier liggen geen item om te pakken.')
+      #Soortenkamers(kamer)
+   # else:
+   # print('Welk item wil je oppakken?')
+  # print(kamers[huidigekamer][items])
+   # item = input('>')
+    #if item in kamers[kamer][items]:
+     # inventory.append(item)
+   # else:
+     # print('Probeer opnieuw.')
   elif not Volgende in options:    
     print("Je hebt het verkeerde ingetypt")
     print("kies nogmaals uit deze keuzes")
     print(" , ".join(options))
     Volgende = input()
-    if not Volgende in options:    
+    if not Volgende.lower() in options:    
       print("Je hebt het verkeerde ingetypt")
       print("kies nogmaals uit deze keuzes")
       print(" , ".join(options))
       Volgende = input()
-      if not Volgende in options:  
+      if not Volgende.lower() in options:  
         print("Je hebt het verkeerde ingetypt")
         print("kies nogmaals uit deze keuzes")
         print(" , ".join(options))
         Volgende = input()
-        if not Volgende in options:
+        if not Volgende.lower() in options:
          print("je hebt meerdere malen het verkeerde ingetypt. Het spel houdt nu echt op")
          Verlorenagain()
     
