@@ -78,18 +78,7 @@ kamers = {
     "lost": "no",
     "win": "no"
     }
-  
-
-    
-
-  
-
-
-  
 } 
-
-
-
 def Soortenkamers(kamer):
   huidigekamer = kamers[kamer] 
   titel = huidigekamer["title"]
@@ -107,10 +96,12 @@ def Soortenkamers(kamer):
     Winagain()
     
   os.system('clear')
+  print('-' * 80)
   print (f"Je hebt gekozen voor {titel}.")
   print(beschrijving)
   print("Waarvoor kies je: ")
   print(" , ".join(options))
+  print('-' * 80)
 
     
   
