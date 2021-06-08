@@ -30,7 +30,7 @@ kamers = {
     "options": [""],
     "items" : "",
     "lost": "ja",
-    "win": "nee"
+    "win": "no"
   },
 
   "een touw": {
@@ -46,16 +46,23 @@ kamers = {
     "beschrijving": "Met behulp van het touw lukt het je om uit het drijfzand te komen. Je gaat verder met je reis. Na een paar uur lopen stoot je je voet ineens tegen iets hards! Je gaat kijken wat het is en ziet ineens een hamer uit de grond steken, dit moest vast van de ontdekkingsreizigers zijn die op zoek gingen naar de schat maar nooit meer waren teruggekomen! Zal je de hamer oppakken?.",
     "options": ["ja", "nee"],
     "items" : ["hamer"],
-    "lost": "no",
-    "win": "no",
+    "lost": "nee",
+    "win": "nee",
     },
   "nee": {
     "title": "de hamer niet op te pakken",
     "beschrijving": "je bent net de pijn uit je voet kwijt als je ineens een raar figuur in de verte ziet staan, het lijkt op een bosbewoner! Hij komt op je af met een aardig snel tempo, oh nee wat nu?!!. Je kan de bosbewoner uitschelden, begroeten, of negeren",
     "options": ["begroeten", "negeren", "uitschelden"],
     "lost": "ja",
-    "win": "no",
+    "win": "nee",
     },
+  "ja"  : { 
+    "title": "de hamer wel op te pakken",
+    "beschrijving": "je besluit toch maar even de kaart van je opa te bekijken, je bent al over de helft van de route naar de schat! Je ziet ineens de bloedvlekken op de kaart die je eerder nog niet zijn ogevallen, je hoort gegrom boven je en kijkte omhoog, het is een woeste Dodo! Maar die waren toch uitgestorven, hier niet! Wat doe je?",
+    "options" : ["rustig blijven", "dodo doden"],
+    "lost" : "nee",
+    "win" : "nee"
+  },
   "begroeten": {
     "title": "om rustig te blijven en het wezen te begroeten",
     "beschrijving": "je besluit toch maar even de kaart van je opa te bekijken, je bent al over de helft van de route naar de schat! Je ziet ineens de bloedvlekken op de kaart die je eerder nog niet zijn ogevallen, je hoort gegrom boven je en kijkte omhoog, het is een woeste Dodo! Maar die waren toch uitgestorven, hier niet! Wat doe je? dood maken of rustig blijven",

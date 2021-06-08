@@ -37,6 +37,7 @@ def Soortenkamers(kamer):
     Verlorenagain()
 
   if winnen == "ja":
+    os.system('clear')
     print(beschrijving)
     Winagain()
     
