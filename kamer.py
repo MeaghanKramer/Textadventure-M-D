@@ -53,7 +53,7 @@ kamers = {
     "title": "de hamer niet op te pakken",
     "beschrijving": "je bent net de pijn uit je voet kwijt als je ineens een raar figuur in de verte ziet staan, het lijkt op een bosbewoner! Hij komt op je af met een aardig snel tempo, oh nee wat nu?!!. Je kan de bosbewoner uitschelden, begroeten, of negeren",
     "options": ["begroeten", "negeren", "uitschelden"],
-    "lost": "no",
+    "lost": "ja",
     "win": "no",
     },
   "begroeten": {

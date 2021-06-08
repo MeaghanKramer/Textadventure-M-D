@@ -26,12 +26,14 @@ def Soortenkamers(kamer):
   titel = huidigekamer["title"]
   beschrijving = huidigekamer["beschrijving"]
   options = huidigekamer["options"]
-  items = huidigekamer["items"]
+  # items = huidigekamer["items"]
   verliezen = huidigekamer["lost"]
   winnen = huidigekamer["win"]
   
   if verliezen == "ja":
+    os.system('clear')
     print(beschrijving)
+    Volgende = input()
     Verlorenagain()
 
   if winnen == "ja":
