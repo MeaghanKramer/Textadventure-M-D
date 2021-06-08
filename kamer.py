@@ -63,6 +63,45 @@ kamers = {
     "lost" : "nee",
     "win" : "nee"
   },
+  "rustig blijven" : {
+    "title" : "Rustig blijven",
+    "beschrijving": "Doordat je zo rustig blijft, lukt het je om de dodo te temmen. Je hebt een nieuw maatje voor het leven en die met je verder reist op zoek naar de schat. ",
+    "options" : ["obstakel boomstam",  "kampvuur"],
+    "lost" : "nee",
+    "win": "nee",
+  },
+   "dodo doden" : {
+    "title" : "dodo doden",
+    "beschrijving": "Je doodt het beest met je gevonden hamer en besluit het dier op te eten, want je had ineens zo een trek!Je negeert het feit dat je een vogel allergie hebt en gaat lekker eten, ach dat moet toch goedkomen! Na een lekkere maaltijd moet je kiezen wat je met het kampvuur doet, je keuzes zijn: het kampvuur opruimen, eerst aan laten maar later snel blussen of je ruimt het hele kampvuur niet op.",
+    "options" : ["kampvuur opruimen",  "blussen", "niet opruimen"],
+    "lost" : "nee",
+    "win": "nee",    
+ },
+    "kampvuur opruimen" : {
+    "title" : "kampvuur opruimen",
+    "beschrijving": "Je ruimt het kampvuur zoals het hoort op maar vergeet dat er gevaarlijke leeuwen in de omgeving lopen. Door het kampvuur hebben ze je gezien en zien je nu als prooi. Druk op enter om verder te gaan.",
+    "options" : [],
+    "lost" : "ja",
+    "win": "nee",
+    },
+
+    "blussen" : {
+    "title" : "blussen",
+    "beschrijving": "Na eerst het vuur aan te hebben gedaan, bedenk je je toch en ruim je het kampvuur op. Toch krijg je steeds meer last van je vogel allergie en gaat je lichaam ernstig trillen. Druk op enter om verder te gaan.",
+    "options" : [],
+    "lost" : "ja",
+    "win": "nee",
+    },
+
+    "niet opruimen" : {
+    "title" : "niet opruimen",
+    "beschrijving": "Je kiest ervoor om het kampvuur aan te laten gaan want dat heeft toch niet zo gevaar denk je. Alleen dan zie je de dat bomen ook in vuur en vlam staan door het kampvuur en je realiseert dat je een hele bosbrand hebt gesticht. Druk op enter om verder te gaan.",
+    "options" : [],
+    "lost" : "ja",
+    "win": "nee",
+    },
+
+
   "begroeten": {
     "title": "om rustig te blijven en het wezen te begroeten",
     "beschrijving": "je besluit toch maar even de kaart van je opa te bekijken, je bent al over de helft van de route naar de schat! Je ziet ineens de bloedvlekken op de kaart die je eerder nog niet zijn ogevallen, je hoort gegrom boven je en kijkte omhoog, het is een woeste Dodo! Maar die waren toch uitgestorven, hier niet! Wat doe je? dood maken of rustig blijven",
