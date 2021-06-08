@@ -1,3 +1,4 @@
+import os
 
 def Verlorenagain():
   print("Je hebt verloren")
@@ -105,7 +106,7 @@ def Soortenkamers(kamer):
     print(beschrijving)
     Winagain()
     
-
+  os.system('clear')
   print (f"Je hebt gekozen voor {titel}.")
   print(beschrijving)
   print("Waarvoor kies je: ")
@@ -131,9 +132,9 @@ def Soortenkamers(kamer):
         print("kies nogmaals uit deze keuzes")
         print(" , ".join(options))
         Volgende = input()
-      if not Volgende in options:
-        print("je hebt meerdere malen het verkeerde ingetypt. Het spel houdt nu echt op")
-        Verlorenagain()
+        if not Volgende in options:
+         print("je hebt meerdere malen het verkeerde ingetypt. Het spel houdt nu echt op")
+         Verlorenagain()
     
   elif Volgende in options:
     Soortenkamers(Volgende)   
