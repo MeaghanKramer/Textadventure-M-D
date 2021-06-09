@@ -32,8 +32,9 @@ def Soortenkamers(kamer):
   
   if verliezen == "ja":
     os.system('clear')
+    print("-" * 80 )
     print(beschrijving)
-    Volgende = input()
+    print("-" * 80)
     Verlorenagain()
 
   if winnen == "ja":
@@ -47,7 +48,7 @@ def Soortenkamers(kamer):
   print(beschrijving)
   print("Waarvoor kies je: ")
   print(" , ".join(options))
-  print('-' * 80)
+  print("-" * 80)
   
   Volgende = input()
   if Volgende.lower() == "q":
