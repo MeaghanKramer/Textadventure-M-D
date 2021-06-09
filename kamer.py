@@ -53,7 +53,7 @@ kamers = {
     "title": "de hamer niet op te pakken",
     "beschrijving": "je bent net de pijn uit je voet kwijt als je ineens een raar figuur in de verte ziet staan, het lijkt op een bosbewoner! Hij komt op je af met een aardig snel tempo, oh nee wat nu?!!. Je kan de bosbewoner uitschelden, begroeten, of negeren",
     "options": ["begroeten", "negeren", "uitschelden"],
-    "lost": "ja",
+    "lost": "nee",
     "win": "nee",
     },
   "ja"  : { 
@@ -66,7 +66,7 @@ kamers = {
   "rustig blijven" : {
     "title" : "rustig te blijven",
     "beschrijving": "Doordat je zo rustig blijft, lukt het je om de dodo te temmen. Je hebt een nieuw maatje voor het leven en die met je verder reist op zoek naar de schat. De Dodo begint ineens een hard geluid te maken en je vraagt je af wat het is, je kijkt naar voren en ziet een enorme boomstam liggen. Oh nee! Hoe moet je hier overheen komen?!! De Dodo maakt een grote sprong en gaat er in 1x overheen! Wat ga jij doen om verder te komen? ",
-    "options" : ["klimmen",  "hakken met hamer"],
+    "options" : ["klimmen", "hakken met hamer"],
     "lost" : "nee",
     "win": "nee",
   },
@@ -104,14 +104,14 @@ kamers = {
 
   "begroeten": {
     "title": "om rustig te blijven en het wezen te begroeten",
-    "beschrijving": "na een tijdje besluit je toch maar even de kaart van je opa te bekijken, je bent al over de helft van de route naar de schat! Je ziet ineens de bloedvlekken op de kaart die je eerder nog niet zijn ogevallen, je hoort gegrom boven je en kijkte omhoog, het is een woeste Dodo! Maar die waren toch uitgestorven, hier niet! Wat doe je? dood maken of rustig blijven",
+    "beschrijving": "Je kiest ervoor om aardig te zijn en begroet en het wezen op een aardige toon. Het wezen begroet je netjes terug. Na een tijdje besluit je toch maar even de kaart van je opa te bekijken, je bent al over de helft van de route naar de schat! Je ziet ineens de bloedvlekken op de kaart die je eerder nog niet zijn ogevallen, je hoort gegrom boven je en kijkte omhoog, het is een woeste Dodo! Maar die waren toch uitgestorven, hier niet! Wat doe je? dood maken of rustig blijven",
     "options": ["dood maken", "rustig blijven"],
     "lost": "no",
     "win": "no",
     },
   "uitschelden": {
     "title": "om het wezen uit te schelden",
-    "beschrijving": "Nadat je het wezen uit hebt gescholden ......",
+    "beschrijving": "Nadat je het wezen uit hebt gescholden blijkt het wezen ook jouw terug uit te schelden. De situatie drijgt zeer uit de hand te lopen. Het lijkt erop dat het wezen iets uit zijn jaszak wilt halen. Het ziet er niet goed uit en dat is de reden waarom je snel terug naar huis gaat. Veiligheid voor alles",
     "options" : [], 
     "lost": "ja",
     "win": "nee",
@@ -123,9 +123,9 @@ kamers = {
     "lost": "ja",
     "win": "nee",
     },
-  "hamer gebruiken": {
+  "hakken met hamer": {
     "title": "om de hamer te gebruiken om de muur over te klimmen",
-    "beschrijvig": "Met de hamer die je hebt gevonden maak je de muur   kapot. Je gaat verder met je reis.Je bent op de top van de berg aangekomen en je vraagt je af waar de schat nou toch zou kunnen liggen! Je kijkt nogmaals naar de kaart en ziet een kruis op de plek waar een grot staat. De grot ziet er groot en donker uit en er is geen licht. Er komen ook vleermuizen uit zetten die je Dodo met gemak opeet. Wat doe je nu? De grot in of niet", 
+    "beschrijving": "Met de hamer die je hebt gevonden maak je de muur   kapot. Je gaat verder met je reis.Je bent op de top van de berg aangekomen en je vraagt je af waar de schat nou toch zou kunnen liggen! Je kijkt nogmaals naar de kaart en ziet een kruis op de plek waar een grot staat. De grot ziet er groot en donker uit en er is geen licht. Er komen ook vleermuizen uit zetten die je Dodo met gemak opeet. Wat doe je nu? De grot in of niet", 
     "options": ["grot in", "niet grot in"],
     "lost": "nee",
     "win": "nee",

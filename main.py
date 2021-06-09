@@ -32,14 +32,16 @@ def Soortenkamers(kamer):
   
   if verliezen == "ja":
     os.system('clear')
-    print("-" * 80 )
+    print("-" * 80)
     print(beschrijving)
     print("-" * 80)
     Verlorenagain()
 
   if winnen == "ja":
     os.system('clear')
+    print("-" * 80)
     print(beschrijving)
+    print("-" * 80)
     Winagain()
     
   os.system('clear')
@@ -50,9 +52,10 @@ def Soortenkamers(kamer):
   print(" , ".join(options))
   print("-" * 80)
   
-  Volgende = input()
-  if Volgende.lower() == "q":
-    Verlorenagain()
+  def invoeren():
+    Volgende = input()
+    if Volgende.lower() == "q":
+      Verlorenagain()
   # elif Volgende.lower() == 'g':
     #if kamers[kamer]['items'] == '':
      # print('Hier liggen geen item om te pakken.')
@@ -65,29 +68,15 @@ def Soortenkamers(kamer):
      # inventory.append(item)
    # else:
      # print('Probeer opnieuw.')
-  elif not Volgende in options:    
-    print("Je hebt het verkeerde ingetypt")
-    print("kies nogmaals uit deze keuzes")
-    print(" , ".join(options))
-    Volgende = input()
-    if not Volgende.lower() in options:    
+    elif not Volgende.lower in options:    
       print("Je hebt het verkeerde ingetypt")
       print("kies nogmaals uit deze keuzes")
       print(" , ".join(options))
-      Volgende = input()
-      if not Volgende.lower() in options:  
-        print("Je hebt het verkeerde ingetypt")
-        print("kies nogmaals uit deze keuzes")
-        print(" , ".join(options))
-        Volgende = input()
-        if not Volgende.lower() in options:
-         print("je hebt meerdere malen het verkeerde ingetypt. Het spel houdt nu echt op")
-         Verlorenagain()
+      invoeren()
     
-  elif Volgende in options:
-    Soortenkamers(Volgende)   
-
-
+    elif Volgende in options:
+      Soortenkamers(Volgende)   
+  invoeren()
   
 def spel():
   a = input("Wat is je naam? ")
@@ -96,13 +85,18 @@ def spel():
   print("je kiest tussen (wind)richtingen, deze bestaan allemaal uit 1 letter.")
   print("Je mag zowel een hoofdletter als een kleine letter gebruiken.")
   print("Ook mag je op elk moment van het spel op de letter q drukken,dan zal het spel stoppen.")
-  b = input("Heb je het begrepen? Typ ja of nee  ")
-  if b == "nee" or b == "Nee":
-    Verlorenagain()
-  if b == "Ja" or b == "ja" or b == "JA": 
-   Soortenkamers("padkeuze")
-  if b == "q" or b == "Q":
-    Verlorenagain()
+  def Begrepen():
+    b = input("Heb je het begrepen? Typ ja of nee  ")
+    if b == "nee" or b == "Nee":
+     Verlorenagain()
+    if b == "Ja" or b == "ja" or b == "JA": 
+      Soortenkamers("padkeuze")
+    if b == "q" or b == "Q":
+       Verlorenagain()
+    else:
+      print("je hebt een niet geldige keuze ingevoerd. Probeer het opnieuw")
+      Begrepen()
+  Begrepen()
 
 spel()
   
