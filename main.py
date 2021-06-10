@@ -1,6 +1,31 @@
 import os
 from kamer import kamers
 
+import itertools
+import threading
+import time
+import sys
+
+done = False
+#here is the animation
+def animate():
+    for f in itertools.cycle(['|', '/', '-', '\\']):
+        if done:
+            break
+        sys.stdout.write('\rloading...' + f)
+        sys.stdout.flush()
+        time.sleep(0.01)
+    sys.stdout.write('\rDone!')
+    #os.system("clear")
+
+t = threading.Thread(target=animate)
+t.start()
+
+#long process here
+time.sleep(4)
+done = True
+
+
 inventory = []
 
 def Verlorenagain():
@@ -49,12 +74,14 @@ def Soortenkamers(kamer):
   print (f"Je hebt gekozen voor {titel}.")
   print(beschrijving)
   print("Waarvoor kies je: ")
-  print(" , ".join(options))
+  print(", ".join(options))
   print("-" * 80)
   
   def invoeren():
-    Volgende = input()
-    if Volgende.lower() == "q":
+    Volgende = input('')
+    if Volgende.lower() in options:
+      Soortenkamers(Volgende)
+    elif Volgende.lower() == "q":
       Verlorenagain()
   # elif Volgende.lower() == 'g':
     #if kamers[kamer]['items'] == '':
@@ -68,19 +95,28 @@ def Soortenkamers(kamer):
      # inventory.append(item)
    # else:
      # print('Probeer opnieuw.')
-    elif not Volgende.lower in options:    
+    else:    
+      os.system("clear")
       print("Je hebt het verkeerde ingetypt")
       print("kies nogmaals uit deze keuzes")
       print(" , ".join(options))
+      print ("-" * 80)
       invoeren()
+      #if Volgende in options:
+      #  Soortenkamers(Volgende)
+      #elif not Volgende in options:
+      #  invoeren()
     
-    elif Volgende in options:
-      Soortenkamers(Volgende)   
+    #elif Volgende in options:
+     # Soortenkamers(Volgende)   
   invoeren()
   
 def spel():
+  os.system("clear")
+  os.system("clear")
   a = input("Wat is je naam? ")
-  print("Hallo " + a + ". Leuk dat je komt spelen, laten we beginnen!")
+  d = input("En wat is je achternaam? ")
+  print("Hallo " + a + " " +  d + ". Leuk dat je komt spelen, laten we beginnen!")
   print("Welkom bij de game je zal veel nieuwe ervaringen opdoen!")
   print("je kiest tussen (wind)richtingen, deze bestaan allemaal uit 1 letter.")
   print("Je mag zowel een hoofdletter als een kleine letter gebruiken.")

@@ -72,7 +72,7 @@ kamers = {
   },
    "dodo doden" : {
     "title" : "dodo te doden",
-    "beschrijving": "Je doodt het beest met je gevonden hamer en besluit het dier op te eten, want je had ineens zo een trek!Je negeert het feit dat je een vogel allergie hebt en gaat lekker eten, ach dat moet toch goedkomen! Na een lekkere maaltijd moet je kiezen wat je met het kampvuur doet, je keuzes zijn: het kampvuur opruimen, eerst aan laten maar later snel blussen of je ruimt het hele kampvuur niet op.",
+    "beschrijving": "Je doodt het beest met je gevonden hamer en besluit het dier op te eten, want je had ineens zo een trek! Je negeert het feit dat je een vogel allergie hebt en gaat lekker eten, ach dat moet toch goedkomen! Na een lekkere maaltijd moet je kiezen wat je met het kampvuur doet, je keuzes zijn: het kampvuur opruimen, eerst aan laten maar later snel blussen of je ruimt het hele kampvuur niet op.",
     "options" : ["kampvuur opruimen",  "blussen", "niet opruimen"],
     "lost" : "nee",
     "win": "nee",    
@@ -110,8 +110,8 @@ kamers = {
     "win": "no",
     },
   "uitschelden": {
-    "title": "om het wezen uit te schelden",
-    "beschrijving": "Nadat je het wezen uit hebt gescholden blijkt het wezen ook jouw terug uit te schelden. De situatie drijgt zeer uit de hand te lopen. Het lijkt erop dat het wezen iets uit zijn jaszak wilt halen. Het ziet er niet goed uit en dat is de reden waarom je snel terug naar huis gaat. Veiligheid voor alles",
+    "title": "uitschelden",
+    "beschrijving": "Nadat je het wezen uit hebt gescholden blijkt het wezen ook jouw terug uit te schelden. De situatie dreigt zeer uit de hand te lopen. Het lijkt erop dat het wezen iets uit zijn jaszak wilt halen. Het ziet er niet goed uit en dat is de reden waarom je snel terug naar huis gaat. Veiligheid voor alles",
     "options" : [], 
     "lost": "ja",
     "win": "nee",
