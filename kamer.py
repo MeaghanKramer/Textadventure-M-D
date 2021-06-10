@@ -1,7 +1,7 @@
 kamers = {
   "padkeuze": {
     "title": "dit spel te laten beginnen",
-    "beschrijving": "Je staat in de modder, met een grote heuvel voor je en een enorme schaduw hangt over je heen. Je denkt al jaren aan die ene legende die je hoorde van je opa. Eindelijk heb je je ouders kunnen overtuigen om je de reis naar de schat te laten gaan maken. De schat ligt op de berg. Je staat hier voor je eerste kruising. Je kan kiezen uit twee paden. Een lang en veilig pad of een kort en onveilig pad. Welk pad kies je?",
+    "beschrijving": "Je staat in de vieze modder, met een grote heuvel voor je en een enorme schaduw hangt over je heen. #scarystuff Je denkt al jaren aan die ene legende die je hoorde van je opa. Eindelijk heb je je ouders kunnen overtuigen om je de reis naar de schat te laten maken. #manipulatie. De schat ligt op de berg... Je staat hier voor je eerste kruising. Je kan kiezen uit twee paden. Een lang en veilig pad of een kort en onveilig pad. Welk pad kies je? #SPANNUHND",
     "options": ["lang en veilig" , "kort en onveilig"],
     "items" : "",
     "lost": "nee",
@@ -10,7 +10,7 @@ kamers = {
 
   "kort en onveilig": { 
     "title": "een kort en onveilig pad",
-    "beschrijving": "Je hebt een gewaagde keus gemaakt en kies voor het kort en onveilige pad. Echter is het pad zo onveilig dat je niet meer vooruit kan en niet meer achteruit. Het spel is over",
+    "beschrijving": "Je hebt een gewaagde keus gemaakt en kies voor het kort en onveilige pad.#rebel. Dit pad is zo extreem gevaarlijk... je valt gelijk flauw! Nee grapje, je gaat na tien meter lopen dood door een gas in de lucht, je realiseert je dit pas te laat... #letopjeomgeving. Het spel is over",
     "options": [""],
     "items" : "",
     "lost": "ja",
@@ -18,22 +18,22 @@ kamers = {
     },
   "lang en veilig": {
     "title": "het lange en veilig pad",
-    "beschrijving": "Je hebt het zekere voor het onzekere gekozen en gaat verder met je reis.  Op een moment voel je ineens de grond zacht worden en je begint weg te zakken!!! Oh nee!!! Je denkt aan het verhaal dat je opa je had verteld, het is drijfzand! Je kijkt op je heen en ziet de dingen waar je je mee kan redden. Een touw, een tak, heel lang nadenken", 
-    "options": ["een touw", "een tak", "lang nadenken"],
+    "beschrijving": "Je hebt het zekere voor het onzekere gekozen en gaat verder met je reis, dan maar iets langer lopen. Op een moment voel je ineens de grond zacht worden en je begint weg te zakken!!! Oh nee!!! Je denkt aan het verhaal dat je opa je had verteld, het is toch echt drijfzand en niet de scetchers met dat zachte voetkussen! Je kijkt op je heen en ziet de dingen waar je je mee kan redden. Een touw, een tak, heel lang nadenken", 
+    "options": ["touw", "tak", "lang nadenken"],
     "items" : "",
     "lost": "no",
     "win": "no",
     },
   "lang nadenken": {
     "title": "heel lang nadenken",
-    "beschrijving": "Na heel lang nadenken weet je het echt niet meer. Je zakt steeds verder in de modder. Nu kan je niet meer terug. De enige weg is terug naar huis. Je reis is helaas voorbij.",
+    "beschrijving": "Na heel lang nadenken weet je het echt niet meer. Je zakt steeds verder in de modder.#uitstelgedrag Nu kan je niet meer terug...  Al snel krijg je geen adem meer en sterf je... (hoe dom ben je ook dat je stopt met ademen #loser)",
     "options": [""],
     "items" : "",
     "lost": "ja",
     "win": "no"
   },
 
-  "een touw": {
+  "touw": {
     "title": "het touw om je te redden",
     "beschrijving": "Met behulp van het touw lukt het je om uit het drijfzand te komen. Je gaat verder met je reis. Na een paar uur lopen stoot je je voet ineens tegen iets hards! Je gaat kijken wat het is en ziet ineens een hamer uit de grond steken, dit moest vast van de ontdekkingsreizigers zijn die op zoek gingen naar de schat maar nooit meer waren teruggekomen! Zal je de hamer oppakken?.",
     "options": ["ja", "nee"],
@@ -41,7 +41,7 @@ kamers = {
     "lost": "no",
     "win": "no",
   },
-  "een tak": {
+  "tak": {
     "title": "de tak om je te redden",
     "beschrijving": "Met behulp van het touw lukt het je om uit het drijfzand te komen. Je gaat verder met je reis. Na een paar uur lopen stoot je je voet ineens tegen iets hards! Je gaat kijken wat het is en ziet ineens een hamer uit de grond steken, dit moest vast van de ontdekkingsreizigers zijn die op zoek gingen naar de schat maar nooit meer waren teruggekomen! Zal je de hamer oppakken?.",
     "options": ["ja", "nee"],
@@ -79,7 +79,7 @@ kamers = {
  },
     "kampvuur opruimen" : {
     "title" : "kampvuur opruimen",
-    "beschrijving": "Je ruimt het kampvuur zoals het hoort op maar vergeet dat er gevaarlijke leeuwen in de omgeving lopen. Door het kampvuur hebben ze je gezien en zien je nu als prooi. Druk op enter om verder te gaan.",
+    "beschrijving": "Je ruimt het kampvuur (zoals het hoort) #preventclimatechange op maar vergeet dat er gevaarlijke leeuwen in de omgeving lopen. Doordat je zolang bij het kampvuur bent gebleven hebben ze de rook gezien en dus nu oo jou!Ze zien je nu als prooi... RENNEN!!!!! Helaas is die leeuw toch echt sneller dan dat jij bent, en die dodo op je maag maakt je nou ook niet bepaald sneller... De leeuw haalt je in en eet je op #sadlife",
     "options" : [],
     "lost" : "ja",
     "win": "nee",
@@ -87,7 +87,7 @@ kamers = {
 
     "blussen" : {
     "title" : "te blussen",
-    "beschrijving": "Na eerst het vuur aan te hebben gedaan, bedenk je je toch en ruim je het kampvuur op. Toch krijg je steeds meer last van je vogel allergie en gaat je lichaam ernstig trillen. Druk op enter om verder te gaan.",
+    "beschrijving": "Na eerst het vuur aan te hebben gedaan, bedenk je je toch en ruim je het kampvuur op. Toch krijg je steeds meer last van je vogel allergie en gaat je lichaam ernstig trillen. Je trilt meer en meer tot dat je ineens de YMCA dance aan het doen bent, wat is dit voor allergie? Of is het een hallicunatie? Het laatste wat je ziet is een dode dodo die je uitlacht terwijl je sterft.#karma ",
     "options" : [],
     "lost" : "ja",
     "win": "nee",
@@ -95,7 +95,7 @@ kamers = {
 
     "niet opruimen" : {
     "title" : "niet opruimen",
-    "beschrijving": "Je kiest ervoor om het kampvuur aan te laten gaan want dat heeft toch niet zo gevaar denk je. Alleen dan zie je de dat bomen ook in vuur en vlam staan door het kampvuur en je realiseert dat je een hele bosbrand hebt gesticht. Druk op enter om verder te gaan.",
+    "beschrijving": "Je kiest ervoor om het kampvuur aan te laten staan want dat heeft toch niet zo gevaar denk je. Alleen dan zie je de dat bomen ook in vuur en vlam staan door het kampvuur en je realiseert dat je een hele bosbrand hebt gesticht... Helaas ben je niet vuur bestendig en verbrand je levend, AaaaRRRHHH!!!!! #nietmetvuurspelen",
     "options" : [],
     "lost" : "ja",
     "win": "nee",
@@ -104,8 +104,8 @@ kamers = {
 
   "begroeten": {
     "title": "om rustig te blijven en het wezen te begroeten",
-    "beschrijving": "Je kiest ervoor om aardig te zijn en begroet en het wezen op een aardige toon. Het wezen begroet je netjes terug. Na een tijdje besluit je toch maar even de kaart van je opa te bekijken, je bent al over de helft van de route naar de schat! Je ziet ineens de bloedvlekken op de kaart die je eerder nog niet zijn ogevallen, je hoort gegrom boven je en kijkte omhoog, het is een woeste Dodo! Maar die waren toch uitgestorven, hier niet! Wat doe je? dood maken of rustig blijven",
-    "options": ["dood maken", "rustig blijven"],
+    "beschrijving": "Je kiest ervoor om aardig te zijn en begroet en het wezen op een aardige toon. Het wezen begroet je netjes terug. Na een tijdje besluit je toch maar even de kaart van je opa te bekijken, je bent al over de helft van de route naar de schat! Je ziet ineens de bloedvlekken op de kaart die je eerder nog niet zijn ogevallen, je hoort gegrom boven je en kijkte omhoog, het is een woeste Dodo! Maar die waren toch uitgestorven, hier niet! Wat doe je? dodo doden of rustig blijven",
+    "options": ["dodo doden", "rustig blijven"],
     "lost": "no",
     "win": "no",
     },

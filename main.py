@@ -15,8 +15,7 @@ def animate():
         sys.stdout.write('\rloading...' + f)
         sys.stdout.flush()
         time.sleep(0.01)
-    sys.stdout.write('\rDone!')
-    #os.system("clear")
+    #sys.stdout.write('\rDone!')
 
 t = threading.Thread(target=animate)
 t.start()
@@ -38,7 +37,7 @@ def Verlorenagain():
     exit()
 
 def Winagain():
-    print("Je hebt gewonnen. Gefeliciteerd!")
+   # print("JE ZIET DE SCHAT LIGGEN!!! JAAA!!! Gefeliciteerd," + a + " " +  d + ", je hebt gewonnen!")
     c = input("Wil je nog een keer spelen (typ ja of nee) ")
     if c == "Ja" or c == "ja" or c == "JA":
       spel()
@@ -83,44 +82,33 @@ def Soortenkamers(kamer):
       Soortenkamers(Volgende)
     elif Volgende.lower() == "q":
       Verlorenagain()
-  # elif Volgende.lower() == 'g':
-    #if kamers[kamer]['items'] == '':
-     # print('Hier liggen geen item om te pakken.')
-      #Soortenkamers(kamer)
-   # else:
-   # print('Welk item wil je oppakken?')
-  # print(kamers[huidigekamer][items])
-   # item = input('>')
-    #if item in kamers[kamer][items]:
-     # inventory.append(item)
-   # else:
-     # print('Probeer opnieuw.')
     else:    
       os.system("clear")
       print("Je hebt het verkeerde ingetypt")
+      print ("Weet je zeker dat je geen spatie teveel hebt?")
       print("kies nogmaals uit deze keuzes")
       print(" , ".join(options))
       print ("-" * 80)
       invoeren()
-      #if Volgende in options:
-      #  Soortenkamers(Volgende)
-      #elif not Volgende in options:
-      #  invoeren()
-    
-    #elif Volgende in options:
-     # Soortenkamers(Volgende)   
+
   invoeren()
+  
+
   
 def spel():
   os.system("clear")
-  os.system("clear")
+  print("Laten we beginnen!")
+  print("-" * 80)
   a = input("Wat is je naam? ")
   d = input("En wat is je achternaam? ")
+  os.system("clear")
+  print ("-" * 80)
   print("Hallo " + a + " " +  d + ". Leuk dat je komt spelen, laten we beginnen!")
   print("Welkom bij de game je zal veel nieuwe ervaringen opdoen!")
   print("je kiest tussen (wind)richtingen, deze bestaan allemaal uit 1 letter.")
   print("Je mag zowel een hoofdletter als een kleine letter gebruiken.")
   print("Ook mag je op elk moment van het spel op de letter q drukken,dan zal het spel stoppen.")
+  print('-' * 80)
   def Begrepen():
     b = input("Heb je het begrepen? Typ ja of nee  ")
     if b == "nee" or b == "Nee":
@@ -130,7 +118,7 @@ def spel():
     if b == "q" or b == "Q":
        Verlorenagain()
     else:
-      print("je hebt een niet geldige keuze ingevoerd. Probeer het opnieuw")
+      print("je hebt een niet geldige keuze ingevoerd.")
       Begrepen()
   Begrepen()
 
