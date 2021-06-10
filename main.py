@@ -24,6 +24,19 @@ t.start()
 time.sleep(4)
 done = True
 
+os.system("clear")
+print("Laten we beginnen!")
+print("-" * 80)
+a = input("Wat is je naam? ")
+d = input("En wat is je achternaam? ")
+os.system("clear")
+print ("-" * 80)
+print("Hallo " + a + " " +  d + ". Leuk dat je komt spelen, laten we beginnen!")
+print("Welkom bij de game je zal veel nieuwe ervaringen opdoen!")
+print("je kiest tussen (wind)richtingen, deze bestaan allemaal uit 1 letter.")
+print("Je mag zowel een hoofdletter als een kleine letter gebruiken.")
+print("Ook mag je op elk moment van het spel op de letter q drukken,dan zal het spel stoppen.")
+print('-' * 80)
 
 inventory = []
 
@@ -37,7 +50,7 @@ def Verlorenagain():
     exit()
 
 def Winagain():
-   # print("JE ZIET DE SCHAT LIGGEN!!! JAAA!!! Gefeliciteerd," + a + " " +  d + ", je hebt gewonnen!")
+    print("JE ZIET DE SCHAT LIGGEN!!! JAAA!!! Gefeliciteerd," + a + " " + d + ", je hebt gewonnen!")
     c = input("Wil je nog een keer spelen (typ ja of nee) ")
     if c == "Ja" or c == "ja" or c == "JA":
       spel()
@@ -50,7 +63,6 @@ def Soortenkamers(kamer):
   titel = huidigekamer["title"]
   beschrijving = huidigekamer["beschrijving"]
   options = huidigekamer["options"]
-  # items = huidigekamer["items"]
   verliezen = huidigekamer["lost"]
   winnen = huidigekamer["win"]
   
@@ -94,21 +106,8 @@ def Soortenkamers(kamer):
   invoeren()
   
 
-  
 def spel():
-  os.system("clear")
-  print("Laten we beginnen!")
-  print("-" * 80)
-  a = input("Wat is je naam? ")
-  d = input("En wat is je achternaam? ")
-  os.system("clear")
-  print ("-" * 80)
-  print("Hallo " + a + " " +  d + ". Leuk dat je komt spelen, laten we beginnen!")
-  print("Welkom bij de game je zal veel nieuwe ervaringen opdoen!")
-  print("je kiest tussen (wind)richtingen, deze bestaan allemaal uit 1 letter.")
-  print("Je mag zowel een hoofdletter als een kleine letter gebruiken.")
-  print("Ook mag je op elk moment van het spel op de letter q drukken,dan zal het spel stoppen.")
-  print('-' * 80)
+ 
   def Begrepen():
     b = input("Heb je het begrepen? Typ ja of nee  ")
     if b == "nee" or b == "Nee":
