@@ -36,26 +36,27 @@ kamers = {
   "touw": {
     "title": "het touw om je te redden",
     "beschrijving": "Met behulp van het touw lukt het je om uit het drijfzand te komen. Je gaat verder met je reis. Na een paar uur lopen stoot je je voet ineens tegen iets hards! #letopwaarjeloopt #nietzonaarjetelefoonstaren. Je gaat kijken wat het is en ziet ineens een hamer uit de grond steken (IS THOR HIER GEWEEST?!!), dit moest vast van de ontdekkingsreizigers zijn die op zoek gingen naar de schat maar nooit meer waren teruggekomen! Zal je de hamer oppakken? (of een betere vraag, KAN je de hamer oppakken? #onlytheworthy",
-    "options": ["ja", "nee"],
+    "options": ["hamer wel oppakken", "hamer niet oppakken"],
     "items" : "",
     "lost": "no",
     "win": "no",
   },
   "tak": {
-    "title": "Met behulp van het touw lukt het je om uit het drijfzand te komen. Je gaat verder met je reis, terwijl je armen pijn doen... Na een paar uur lopen stoot je je voet ineens tegen iets hards! #letopwaarjeloopt #doesniet Je gaat kijken wat het is en ziet ineens een hamer uit de grond steken (wie is er ook zo dom om zn hamer hier achter te laten, pffff), dit moest vast van de ontdekkingsreizigers zijn die op zoek gingen naar de schat maar nooit meer waren teruggekomen! #ohoh Zal je de hamer oppakken? (of een betere vraag, KAN je de hamer oppakken? #onlytheworthy",
-    "options": ["ja", "nee"],
+    "title": "tak" ,
+    "beschrijving":"Met behulp van het touw lukt het je om uit het drijfzand te komen. Je gaat verder met je reis, terwijl je armen pijn doen... Na een paar uur lopen stoot je je voet ineens tegen iets hards! #letopwaarjeloopt #doesniet Je gaat kijken wat het is en ziet ineens een hamer uit de grond steken (wie is er ook zo dom om zn hamer hier achter te laten, pffff), dit moest vast van de ontdekkingsreizigers zijn die op zoek gingen naar de schat maar nooit meer waren teruggekomen! #ohoh Zal je de hamer oppakken? (of een betere vraag, KAN je de hamer oppakken? #onlytheworthy",
+    "options": ["hamer wel oppakken", "hamer niet oppakken"],
     "items" : ["hamer"],
     "lost": "nee",
     "win": "nee",
     },
-  "nee": {
+  "hamer niet oppakken": {
     "title": "de hamer niet op te pakken",
-    "beschrijving": "Je bent net de pijn uit je voet kwijt als je ineens een raar figuur in de verte ziet staan, het lijkt op een bosbewoner!(Je ruikt hem helemaal hier!!! Wanneer heeft hij voor het laatst gedouchet? Of wacht, ben jij dat zelf? #stinkiewinkie) Hij komt op je af met een aardig snel tempo, oh nee wat nu?!!. Je kan de bosbewoner uitschelden, begroeten, of negeren",
+    "beschrijving": "Je bent net de pijn uit je voet kwijt als je ineens een raar figuur in de verte ziet staan, het lijkt op een bosbewoner!(Je ruikt hem helemaal hier!!! Wanneer heeft hij voor het laatst gedouchet? Of wacht, ben jij dat zelf? #stinkiewinkie) Hij komt op je af met een aardig snel tempo, oh nee wat nu?!!. Je kan de bosbewoner uitschelden, begroeten, of negeren, je kan ook terug naar de vorige keuze",
     "options": ["begroeten", "negeren", "uitschelden"],
     "lost": "nee",
     "win": "nee",
     },
-  "ja"  : { 
+  "hamer wel oppakken"  : { 
     "title": "de hamer wel op te pakken",
     "beschrijving": "Je besluit toch maar even de kaart van je opa te bekijken, je bent al over de helft van de route naar de schat! Je ziet ineens de bloedvlekken op de kaart die je eerder nog niet zijn ogevallen (of ketchup?), je hoort gegrom boven je en kijkte omhoog (Nee, DAT IS BLOED!), het is een woeste Dodo! Maar die waren toch al 39837383 eeuwen geldeden uitgestorven, hier niet! #mutatie #scarydodo #dodododen Wat doe je?",
     "options" : ["rustig blijven", "dodo doden"],
@@ -110,9 +111,17 @@ kamers = {
     },
   "uitschelden": {
     "title": "uitschelden",
-    "beschrijving": "Nadat je het wezen uit hebt gescholden blijkt het wezen ook jouw terug uit te schelden (dodo taal: KJEf jfds  AAHRKFVMO...)Je weet niet wat hij zegt maar het klinkt niet al te aardig #doeslief. De situatie dreigt zeer uit de hand te lopen. Het lijkt erop dat het wezen iets uit zijn jaszak wilt halen. Het ziet er niet goed uit en dat is de reden waarom je snel terug naar huis gaat #klaarmee. Veiligheid voor alles #pussy",
-    "options" : [], 
-    "lost": "ja",
+    "beschrijving": "Nadat je het wezen uit hebt gescholden blijkt het wezen ook jouw terug uit te schelden (dodo taal: KJEf jfds  AAHRKFVMO...)Je weet niet wat hij zegt maar het klinkt niet al te aardig #doeslief. De situatie dreigt zeer uit de hand te lopen. Het lijkt erop dat het wezen iets uit zijn jaszak wilt halen. Het ziet er niet goed uit en dat is de reden waarom je snel terug wilt naar de vorige keuze!!! Had je hem nu maar niet uigescholden...",
+    "options" : ["hamer niet oppakken"], 
+    "lost": "nee",
+    "win": "nee",
+    },
+
+    "negeren": {
+    "title": "negeren",
+    "beschrijving": "Nadat je langs het rare figuur bent gelopen, voel je je toch niet zo op je gemak en besluit je terug te gaan naar de vorige keuze om het toch maar anders te benaderen...",
+    "options" : ["hamer niet oppakken"], 
+    "lost": "nee",
     "win": "nee",
     },
   "klimmen": {
