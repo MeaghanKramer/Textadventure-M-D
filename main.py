@@ -10,7 +10,7 @@ def progress(percent=0, width=30):
     print('\r[', hashes*'#', blanks*' ', ']', f' {percent:.0f}%', sep='',
         end='', flush=True)
 
-print('This will take a moment')
+print("Even laden, jouw server is een beetje langzaam...")
 for i in range(101):
     progress(i)
     sleep(0.05)
@@ -25,11 +25,11 @@ print("-" * 80)
 a = input("Wat is je naam? ")
 d = input("En wat is je achternaam? ")
 os.system("clear")
-print ("-" * 80)
-print("Hallo " + a + " " +  d + ". Leuk dat je komt spelen, laten we beginnen!")
-print("Welkom bij de game je zal veel nieuwe ervaringen opdoen!")
-print("je kiest tussen (wind)richtingen, deze bestaan allemaal uit 1 letter.")
-print("Je mag zowel een hoofdletter als een kleine letter gebruiken.")
+print("-" * 80)
+print("Hallo " + a + " " +  d + ". Leuk dat je komt spelen, laten we beginnen!") ; sleep (1)
+print("Welkom bij de game je zal veel nieuwe ervaringen opdoen!") ; sleep (0.5)
+print("je kiest tussen richtingen, deze bestaan allemaal uit 1 letter.") ; sleep (0.5)
+print("Je mag zowel een hoofdletter als een kleine letter gebruiken.") ; sleep (0.5)
 print("Ook mag je op elk moment van het spel op de letter q drukken,dan zal het spel stoppen.")
 print('-' * 80)
 
@@ -39,8 +39,10 @@ inventory = []
 
 def nogmaals() :
     os.system("clear")
-    m = input("Je hebt niet tussen ja en nee gekozen, maak aub de keuze opnieuw... Misschien vrrlies je eze keer niet? :) Kies je ja of nee?")
+    print("Je hebt niet tussen ja en nee gekozen, maak aub de keuze opnieuw... Misschien verlies je deze keer niet? :) ")
+    m = input("Kies je voor ja of nee?")
     if m == "nee" or m == "Nee":
+      print("Heb je het nou opgegeven??? Jammer dit... GAME OVER") ; sleep (3)
       exit()
     if m == "Ja" or m == "JA" or m == "ja":
       spel()
@@ -49,7 +51,7 @@ def nogmaals() :
     nogmaals()
 
 def Verlorenagain():
-  print ("-" * 80)
+  print("-" * 80)
   print("Helaas heb je verloren... Om heel eerlijk te zijn had ik wel beter van jou verwacht," + a + " " + d + ",volgende keer beter dan maar!")
   print("-" * 80)
   c = input("Wil je nog een keer spelen (typ ja of nee) ")
@@ -57,7 +59,7 @@ def Verlorenagain():
   if c == "Ja"or c == "ja" or c == "JA" :
     spel()
   if c == "nee" or c == "NEE" or c == "Nee":
-    print ("Jammer, tot de volgende keer!")
+    print("Jammer, tot de volgende keer!") ; sleep (2)
     exit()
   else:
     nogmaals()
@@ -70,7 +72,7 @@ def Winagain():
     if c == "Ja" or c == "ja" or c == "JA":
       spel()
     else:
-      print("GAME OVER, maar je hebt tenminste gewonnen :)")
+      print("GAME WON, ga het lekker vieren en koop een taart :)") ; sleep (3)
       exit()
 
 #kamers + verwijzingen van kamers
@@ -98,7 +100,7 @@ def Soortenkamers(kamer):
     
   os.system('clear')
   print('-' * 80)
-  print (f"Je hebt gekozen voor {titel}.")
+  print(f"Je hebt gekozen voor {titel}.")
   print(beschrijving)
   print("Waarvoor kies je: ")
   print(", ".join(options))
@@ -116,7 +118,7 @@ def Soortenkamers(kamer):
       print ("Weet je zeker dat je geen spatie teveel hebt?")
       print("kies nogmaals uit deze keuzes")
       print(" , ".join(options))
-      print ("-" * 80)
+      print("-" * 80)
       invoeren()
 
   invoeren()
@@ -125,7 +127,10 @@ def Soortenkamers(kamer):
 def spel():
  
   def Begrepen():
-    b = input("Heb je het begrepen? Typ ja of nee  ")
+    print("Het spel gaat beginnen, heb je het begrepen? ")
+    print("-" * 80)
+    b = input("Maak je keuze! Typ ja of nee ")
+    print("-" * 80)
     if b == "nee" or b == "Nee":
      Verlorenagain()
     if b == "Ja" or b == "ja" or b == "JA": 
