@@ -17,6 +17,10 @@ for i in range(101):
     sleep(0.05)
 print()
 
+import time
+
+
+
 os.system("clear")
 print("Laten we beginnen!")
 print("-" * 80)
