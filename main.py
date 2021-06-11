@@ -2,9 +2,8 @@ import os
 from kamer import kamers
 from time import sleep
 
+#code voor loading screen
 def progress(percent=0, width=30):
-    # The number of hashes to show is based on the percent passed in. The
-    # number of blanks is whatever space is left after.
     hashes = width * percent // 100
     blanks = width - hashes
 
@@ -16,10 +15,9 @@ for i in range(101):
     progress(i)
     sleep(0.05)
 print()
+# eind code loading screen
 
-import time
-
-
+#begin code, uit functie zodat er naar de naam verwezen kan worden bij game over en winst
 
 os.system("clear")
 print("Laten we beginnen!")
@@ -37,14 +35,34 @@ print('-' * 80)
 
 inventory = []
 
+#Als de speler heeft verloren treedt dit in werking
+
+def nogmaals() :
+    os.system("clear")
+    m = input("Je hebt niet tussen ja en nee gekozen, maak aub de keuze opnieuw... Misschien vrrlies je eze keer niet? :) Kies je ja of nee?")
+    if m == "nee" or m == "Nee":
+      exit()
+    if m == "Ja" or m == "JA" or m == "ja":
+      spel()
+    else:
+      nogmaals()
+    nogmaals()
+
 def Verlorenagain():
+  print ("-" * 80)
   print("Helaas heb je verloren... Om heel eerlijk te zijn had ik wel beter van jou verwacht," + a + " " + d + ",volgende keer beter dan maar!")
+  print("-" * 80)
   c = input("Wil je nog een keer spelen (typ ja of nee) ")
-  if c == "Ja" or c == "ja" or c == "JA":
+  print("-" * 80)
+  if c == "Ja"or c == "ja" or c == "JA" :
     spel()
-  else:
-    print("GAME OVER")
+  if c == "nee" or c == "NEE" or c == "Nee":
+    print ("Jammer, tot de volgende keer!")
     exit()
+  else:
+    nogmaals()
+  Verlorenagain()
+
 
 def Winagain():
     print("JE ZIET DE SCHAT LIGGEN!!! JAAA!!! Gefeliciteerd," + a + " " + d + ", je hebt gewonnen!")
@@ -52,7 +70,7 @@ def Winagain():
     if c == "Ja" or c == "ja" or c == "JA":
       spel()
     else:
-      print("GAME OVER")
+      print("GAME OVER, maar je hebt tenminste gewonnen :)")
       exit()
 
 def Soortenkamers(kamer):
@@ -117,6 +135,7 @@ def spel():
       print("je hebt een niet geldige keuze ingevoerd.")
       Begrepen()
   Begrepen()
+
 
 spel()
   
