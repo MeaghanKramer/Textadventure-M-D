@@ -63,7 +63,7 @@ def Verlorenagain():
     nogmaals()
   Verlorenagain()
 
-
+#Als de speler wint treedt dit in werking
 def Winagain():
     print("JE ZIET DE SCHAT LIGGEN!!! JAAA!!! Gefeliciteerd," + a + " " + d + ", je hebt gewonnen!")
     c = input("Wil je nog een keer spelen (typ ja of nee) ")
@@ -73,6 +73,7 @@ def Winagain():
       print("GAME OVER, maar je hebt tenminste gewonnen :)")
       exit()
 
+#kamers + verwijzingen van kamers
 def Soortenkamers(kamer):
   huidigekamer = kamers[kamer] 
   titel = huidigekamer["title"]
