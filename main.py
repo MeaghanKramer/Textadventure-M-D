@@ -51,7 +51,7 @@ def nogmaals() :
     nogmaals()
 
 def Verlorenagain():
-  print("-" * 80)
+  os.system('clear')
   print("Helaas heb je verloren... Om heel eerlijk te zijn had ik wel beter van jou verwacht," + a + " " + d + ",volgende keer beter dan maar!")
   print("-" * 80)
   c = input("Wil je nog een keer spelen (typ ja of nee) ")
@@ -136,7 +136,7 @@ def spel():
     if b == "Ja" or b == "ja" or b == "JA": 
       Soortenkamers("padkeuze")
     if b == "q" or b == "Q":
-       Verlorenagain()
+     Verlorenagain()
     else:
       print("je hebt een niet geldige keuze ingevoerd.")
       Begrepen()
