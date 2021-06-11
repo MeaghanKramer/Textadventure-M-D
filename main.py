@@ -1,28 +1,21 @@
 import os
 from kamer import kamers
+from time import sleep
 
-import itertools
-import threading
-import time
-import sys
+def progress(percent=0, width=30):
+    # The number of hashes to show is based on the percent passed in. The
+    # number of blanks is whatever space is left after.
+    hashes = width * percent // 100
+    blanks = width - hashes
 
-done = False
-#here is the animation
-def animate():
-    for f in itertools.cycle(['|', '/', '-', '\\']):
-        if done:
-            break
-        sys.stdout.write('\rloading...' + f)
-        sys.stdout.flush()
-        time.sleep(0.01)
-    #sys.stdout.write('\rDone!')
+    print('\r[', hashes*'#', blanks*' ', ']', f' {percent:.0f}%', sep='',
+        end='', flush=True)
 
-t = threading.Thread(target=animate)
-t.start()
-
-#long process here
-time.sleep(4)
-done = True
+print('This will take a moment')
+for i in range(101):
+    progress(i)
+    sleep(0.05)
+print()
 
 os.system("clear")
 print("Laten we beginnen!")
@@ -41,7 +34,7 @@ print('-' * 80)
 inventory = []
 
 def Verlorenagain():
-  print("Je hebt verloren")
+  print("Helaas heb je verloren... Om heel eerlijk te zijn had ik wel beter van jou verwacht," + a + " " + d + ",volgende keer beter dan maar!")
   c = input("Wil je nog een keer spelen (typ ja of nee) ")
   if c == "Ja" or c == "ja" or c == "JA":
     spel()
