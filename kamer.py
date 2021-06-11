@@ -43,7 +43,7 @@ kamers = {
   },
   "t": {
     "title": "tak" ,
-    "beschrijving":"Met behulp van het touw lukt het je om uit het drijfzand te komen. Je gaat verder met je reis, terwijl je armen pijn doen... Na een paar uur lopen stoot je je voet ineens tegen iets hards! #letopwaarjeloopt #doesniet Je gaat kijken wat het is en ziet ineens een hamer uit de grond steken (wie is er ook zo dom om zn hamer hier achter te laten, pffff), dit moest vast van de ontdekkingsreizigers zijn die op zoek gingen naar de schat maar nooit meer waren teruggekomen! #ohoh Zal je de hamer oppakken? (of een betere vraag, KAN je de hamer oppakken? Keuze: oppakken (O), en niet oppakken (N) #onlytheworthy",
+    "beschrijving":"Met behulp van het touw lukt het je om uit het drijfzand te komen. Je gaat verder met je reis, terwijl je armen pijn doen... Na een paar uur lopen stoot je je voet ineens tegen iets hards! #letopwaarjeloopt #doesniet Je gaat kijken wat het is en ziet ineens een hamer uit de grond steken (wie is er ook zo dom om zn hamer hier achter te laten, pffff), dit moest vast van de ontdekkingsreizigers zijn die op zoek gingen naar de schat maar nooit meer waren teruggekomen! #ohoh Zal je de hamer oppakken? (of een betere vraag, KAN je de hamer oppakken?) Keuze: oppakken (O), en niet oppakken (N) #onlytheworthy",
     "options": ["o", "n"],
     #"items" : ["hamer"],
     "lost": "nee",
@@ -51,11 +51,21 @@ kamers = {
     },
   "n": {
     "title": "de hamer niet op te pakken",
-    "beschrijving": "Je bent net de pijn uit je voet kwijt als je ineens een raar figuur in de verte ziet staan, het lijkt op een bosbewoner!(Je ruikt hem helemaal hier!!! Wanneer heeft hij voor het laatst gedouchet? Of wacht, ben jij dat zelf? #stinkiewinkie) Hij komt op je af met een aardig snel tempo, oh nee wat nu?!!. Je kan de bosbewoner uitschelden (U), begroeten (B), of negeren (S), je kan ook terug naar de vorige keuze",
-    "options": ["b", "s", "u"],
+    "beschrijving": "Je bent net de pijn uit je voet kwijt als je ineens een raar figuur in de verte ziet staan, het lijkt op een bosbewoner!(Je ruikt hem helemaal hier!!! Wanneer heeft hij voor het laatst gedouchet? Of wacht, ben jij dat zelf? #stinkiewinkie) Hij komt op je af met een aardig snel tempo, oh nee wat nu?!!. Je kan de bosbewoner uitschelden (U), begroeten (B), of negeren (S), je kan ook terug naar de vorige keuze (en dus wegrennen) (Z)",
+    "options": ["b", "s", "u", "z"],
     "lost": "nee",
     "win": "nee",
     },
+
+  "z": {
+    "title": "hamer keuze" ,
+    "beschrijving":"Pfoeee!! Net optijd terug!!! Sjonge jonge wat een enge man was dat toch, getsie! Je bent teruggekopen bij de keuze om de hamer op te pakken? Zal je deze weer wel de hamer oppakken of besluit je toch terug te gaan naar de man en je angten onder ogen te komen? #poetisch. Zal je de hamer oppakken? (of een betere vraag, KAN je de hamer oppakken?) Keuze: oppakken (O), en niet oppakken (N) #onlytheworthy",
+    "options": ["o", "n"],
+    #"items" : ["hamer"],
+    "lost": "nee",
+    "win": "nee",
+  },
+
   "o"  : { 
     "title": "de hamer wel op te pakken",
     "beschrijving": "Je besluit toch maar even de kaart van je opa te bekijken, je bent al over de helft van de route naar de schat! Je ziet ineens de bloedvlekken op de kaart die je eerder nog niet zijn ogevallen (of ketchup?), je hoort gegrom boven je en kijkte omhoog (Nee, DAT IS BLOED!), het is een woeste Dodo! Maar die waren toch al 39837383 eeuwen geldeden uitgestorven, hier niet! #mutatie #scarydodo #dodododen Wat doe je? Rustig blijven (C) of dodo doden (F)",
@@ -153,4 +163,3 @@ kamers = {
     "win": "nee",
     },
 }
-
